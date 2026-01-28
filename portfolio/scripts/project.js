@@ -21,6 +21,28 @@ const projectList = [
     liveLink: "#",
     githubLink: "https://github.com/jai-nandan/face_detection",
   },
+  {
+    id: 3,
+    number: "03",
+    title: "Age Calculator",
+    description:
+      "Developed a simple and responsive Age Calculator using HTML, CSS, and JavaScript that calculates a user’s exact age in years, months, and days based on their birthdate. This project helped me strengthen my front-end development skills, JavaScript logic, and UI design fundamentals.",
+    techStack: [ "HTML", " CSS", " js"],
+    image: "assets/projects/project3.png",
+    liveLink: "https://age-calculator-ebon-one.vercel.app/",
+    githubLink: "https://github.com/jai-nandan/Age-Calculator",
+  },
+   {
+    id: 4,
+    number: "04",
+    title: "Shri Paramhans Shop",
+    description:
+      "Created a responsive business website for Shri Param Hans Electrical and Electronics using HTML, CSS, and JavaScript, featuring product details, company information, customer feedback, and contact sections.",
+    techStack: [ "HTML", " CSS", " js"],
+    image: "assets/projects/project4.png",
+    liveLink: "https://paramhans-shop.vercel.app/",
+    githubLink: "https://github.com/jai-nandan/paramhans_shop",
+  },
 ];
 
 const project = document.querySelector(".project");
@@ -99,3 +121,4 @@ const renderProject = (index) => {
 };
 
 renderProject(currentIndex);
+
