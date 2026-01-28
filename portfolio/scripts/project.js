@@ -43,6 +43,17 @@ const projectList = [
     liveLink: "https://paramhans-shop.vercel.app/",
     githubLink: "https://github.com/jai-nandan/paramhans_shop",
   },
+  {
+    id: 5,
+    number: "05",
+    title: "Gst Invoice Generator",
+    description:
+      "ST Billing Web App – A simple web app to create GST invoices with automatic tax calculation and print-ready output using HTML, CSS, and JavaScript.",
+    techStack: [ "HTML", " CSS", " js"],
+    image: "assets/projects/project5.png",
+    liveLink: "https://gst-invoice-gnerator.vercel.app/",
+    githubLink: "https://github.com/jai-nandan/invoice-gnerator",
+  }
 ];
 
 const project = document.querySelector(".project");
@@ -121,4 +132,5 @@ const renderProject = (index) => {
 };
 
 renderProject(currentIndex);
+
 
