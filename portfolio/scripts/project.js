@@ -53,6 +53,17 @@ const projectList = [
     image: "assets/projects/project5.png",
     liveLink: "https://gst-invoice-gnerator.vercel.app/",
     githubLink: "https://github.com/jai-nandan/invoice-gnerator",
+  },
+  {
+    id: 6,
+    number: "06",
+    title: "Shop Management System",
+    description:
+      "Developed a fully responsive Shop Management System to manage products, companies, salesmen, defective items, and payments efficiently. The system supports add, edit, update, and delete operations across all modules with permanent data storage using localStorage.",
+    techStack: [ "HTML", " CSS", " js"],
+    image: "assets/projects/project6.png",
+    liveLink: "https://shop-manager-blush.vercel.app/",
+    githubLink: "https://github.com/jai-nandan/shop-inventory",
   }
 ];
 
@@ -132,5 +143,6 @@ const renderProject = (index) => {
 };
 
 renderProject(currentIndex);
+
 
 
