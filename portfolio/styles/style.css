@@ -136,16 +136,10 @@ nav a {
 .content.active {
   display: block;
 }
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
-}
-
-/* Prevent horizontal scroll and allow vertical scroll */
-body, html {
-  overflow-x: hidden;
-  overflow-y: auto;
+/* style.css */
+body.no-scroll {
+  height: 100dvh;
+  overflow: hidden; /* This completely disables scrolling when the menu is "active" */
 }
 
 
@@ -226,4 +220,5 @@ body, html {
     font-size: 2rem;
   }
 }
+
 
