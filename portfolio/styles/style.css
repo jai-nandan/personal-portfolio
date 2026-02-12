@@ -136,6 +136,18 @@ nav a {
 .content.active {
   display: block;
 }
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
+}
+
+/* Prevent horizontal scroll and allow vertical scroll */
+body, html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 
 @media screen and (width >= 1024px) {
   .main-container {
@@ -214,3 +226,4 @@ nav a {
     font-size: 2rem;
   }
 }
+
