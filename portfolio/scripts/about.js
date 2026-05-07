@@ -70,7 +70,7 @@ const DATA = {
       pdfLink: "assets/certificates/Confrmation_solitarie.pdf" // Path to the offer letter PDF
     },
     {
-    date: "FEBRUARY 2026 - present",
+    date: "FEBRUARY 2026 - April 2026",
       position: "Intership(Artificial Intelligence)",
       company: "Persevex",
       details: "Currently interning in Artificial Intelligence and Machine Learning, gaining hands-on experience in AI development and deployment.",
@@ -171,6 +171,13 @@ const DATA = {
       title: "AI Tools Workshop",
       description: "Completed a 2-hour hands-on AI workshop exploring 10+ AI tools and their practical applications.",
       link: "assets/certificates/WORKSHOP OF AI.pdf"
+    },
+    {
+      id: 4,
+      icon: "ph-certificate",
+      title: "Traning  Certificate (preservex)",
+      description: "Completed AI training at Preservix where I learned the fundamentals of Artificial Intelligence, Machine Learning, ",
+      link: "assets/certificates/Persevex Tranning.pdf"
     }
   ]
 };
