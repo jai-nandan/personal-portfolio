@@ -77,6 +77,15 @@ const DATA = {
       link: "assets/certificates/Internship_Acceptance.pdf", // Optional certificate
       pdfTitle: "Offer Letter", // New property
       pdfLink: "assets/certificates/Internship_Acceptance.pdf" // Path to the offer letter PDF
+    },
+    {
+    date: "June 2026 - August 2026",
+      position: "Intership(data science)",
+      company: "IIt Jammu",
+      details: "Currently interning in Artificial Intelligence and Machine Learning, gaining hands-on experience in AI development and deployment.",
+      link: "assets/certificates/assets/IIT -Jammu.pdf", // Optional certificate
+      pdfTitle: "Offer Letter", // New property
+      pdfLink: "assets/certificates/IIT -Jammu.pdf" // Path to the offer letter PDF
     }
   ],
   education: [
