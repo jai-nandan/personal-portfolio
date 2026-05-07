@@ -66,6 +66,17 @@ const projectList = [
     image: "assets/projects/project6.png",
     liveLink: "https://shop-manager-blush.vercel.app/",
     githubLink: "https://github.com/jai-nandan/shop-inventory",
+  },
+  {
+    id: 7,
+    number: "07",
+    title: "Attendance Management System",
+    description:
+      "System to manage attendance records, employee information, and generate reports using localStorage.",
+    techStack: ["Python", "Tkinter", "MySQL,OpenCV,PIL,NumPy,Pandas,"],
+    image: "assets/projects/project7.png",
+    liveLink: "#",
+    githubLink: "https://github.com/jai-nandan/attendance_system_software",
   }
 ];
 
