@@ -1,13 +1,36 @@
-/* ================= PROJECT SECTION ================= */
+/* ================= RESET ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔥 IMPORTANT: FIX MOBILE SCROLL */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* ================= OPTIONAL NO-SCROLL FIX (MENU) ================= */
+/* Keep this ONLY if you use hamburger menu */
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* ================= MAIN CONTAINER ================= */
 
 #projects.content.active {
   display: block;
   padding: 0.7rem;
   width: 100%;
-  box-sizing: border-box;
 }
 
-/* ---------- Layout ---------- */
+/* ================= PROJECT SECTION ================= */
 
 .project {
   display: flex;
@@ -17,6 +40,8 @@
   width: 100%;
 }
 
+/* ================= INFO SECTION ================= */
+
 .project-info {
   display: flex;
   flex-direction: column;
@@ -24,44 +49,42 @@
   width: 100%;
 }
 
-/* ---------- Headings ---------- */
+/* Headings */
 
 .project-info h3 {
-  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-size: clamp(2rem, 8vw, 5rem);
   color: transparent;
   -webkit-text-stroke: 1px var(--white);
   word-break: break-word;
 }
 
 .project-info h4 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1.2rem, 5vw, 3rem);
 }
 
 .project-info p {
   font-size: 1rem;
-  text-align: justify;
   line-height: 1.6;
+  text-align: justify;
 }
 
-/* ---------- Tech Stack ---------- */
+/* ================= TECH STACK ================= */
 
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   gap: 0.7rem;
   font-size: 1rem;
-  font-weight: 500;
   color: var(--green);
 }
 
-/* ---------- Links & Buttons ---------- */
+/* ================= LINKS ================= */
 
 .links,
 .arrows {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
@@ -69,7 +92,7 @@
   margin-top: 1rem;
 }
 
-/* Circle Buttons */
+/* Buttons */
 
 .links a,
 .arrows a {
@@ -80,44 +103,33 @@
   align-items: center;
   justify-content: center;
 
-  text-decoration: none;
-  color: var(--green);
-  border: 2px solid var(--green);
   border-radius: 50%;
+  border: 2px solid var(--green);
+  color: var(--green);
+  text-decoration: none;
 
-  overflow: hidden;
-  transition: 0.3s linear;
+  transition: 0.3s ease;
 }
 
-/* Hover Effect */
+/* Hover */
 
 .links a:hover,
 .arrows a:hover {
   background: var(--green);
   color: var(--primary);
-  box-shadow:
-    2px 2px 2px var(--green),
-    -2px 2px 2px var(--green),
-    2px -2px 2px var(--green),
-    -2px -2px 2px var(--green);
 }
 
-/* Special Rotate Icon */
+/* Rotate icon fix */
 
 .links a:first-child {
-  rotate: -45deg;
+  transform: rotate(-45deg);
 }
 
 .links a:first-child:hover {
-  rotate: 0deg;
+  transform: rotate(0deg);
 }
 
-.links a i,
-.arrows a {
-  font-size: 1.2rem;
-}
-
-/* ---------- Carousel ---------- */
+/* ================= CAROUSEL ================= */
 
 .carousel {
   display: flex;
@@ -132,26 +144,17 @@
   object-fit: cover;
 }
 
-/* ---------- Arrow Buttons ---------- */
+/* ================= ARROWS ================= */
 
 .arrows {
-  align-self: center;
-  gap: 1rem;
+  justify-content: center;
 }
 
-/* Disabled Button */
+/* Disabled */
 
 .disabled-btn {
-  color: var(--disabled) !important;
-  border-color: var(--disabled) !important;
   opacity: 0.5;
   pointer-events: none;
-}
-
-.disabled-btn:hover {
-  background: none;
-  box-shadow: none;
-  cursor: auto;
 }
 
 /* ================= TABLET ================= */
@@ -176,29 +179,25 @@
     width: 50%;
   }
 
-  .carousel {
-    place-items: end;
-  }
-
   .carousel img {
     width: 90%;
   }
 
   .arrows {
-    margin-left: auto;
+    justify-content: flex-end;
   }
 }
 
-/* ================= SMALL MOBILE FIX ================= */
+/* ================= VERY SMALL MOBILE ================= */
 
 @media (max-width: 480px) {
+
   .project-info h3 {
     font-size: 2rem;
-    -webkit-text-stroke: 0.8px var(--white);
   }
 
   .project-info h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .links a,
